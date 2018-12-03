@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import * as mm from "@magenta/music";
 
+import Navbar from "./components/navbar";
+import SCTracks from "./components/scTracks";
+
 class App extends Component {
   render() {
     const model = new mm.MusicVAE(
@@ -38,8 +41,19 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>this is elChrisso.</h1>
-        <button onClick={play}>Play</button>
+        <Navbar />
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <button type="button" className="btn btn-primary" onClick={play}>
+                Play
+              </button>
+            </div>
+            <div className="col">
+              <SCTracks />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
