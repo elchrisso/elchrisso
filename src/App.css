@@ -3,6 +3,11 @@
   background-color: lightgray;
   padding: 20px;
   padding-top: 70px;
+  @media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+  }
 }
 
 .App-logo {
