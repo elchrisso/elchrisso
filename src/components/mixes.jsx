@@ -12,10 +12,12 @@ class Mixes extends Component {
       <div>
         {this.state.mixes.map(mix => (
           <iframe
+            title={mix}
+            key={mix}
             width="100%"
             height="300"
             scrolling="no"
-            frameborder="no"
+            frameBorder="no"
             allow="autoplay"
             src={mix}
           />

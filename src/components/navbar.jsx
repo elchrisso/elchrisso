@@ -3,25 +3,30 @@ import React, { Component } from "react";
 class Navbar extends Component {
   render() {
     return (
-      <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">
+      <nav className="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="/">
           this is elChrisso.
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/musicbox">
-                MusicBox <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <a className="nav-link" href="/musicbox">
+                MusicBox <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/tracks">
-                Tracks <span class="sr-only">(current)</span>
+            <li className="nav-item active">
+              <a className="nav-link" href="/tracks">
+                Tracks <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/mixes">
-                Mixes <span class="sr-only">(current)</span>
+            <li className="nav-item active">
+              <a className="nav-link" href="/mixes">
+                Mixes <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item active">
+              <a className="nav-link" href="/gratitudinator">
+                Gratitudinator <span className="sr-only">(current)</span>
               </a>
             </li>
           </ul>

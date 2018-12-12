@@ -15,10 +15,12 @@ class Tracks extends Component {
       <div>
         {this.state.tracks.map(track => (
           <iframe
+            title={track}
+            key={track}
             width="100%"
             height="166"
             scrolling="no"
-            frameborder="no"
+            frameBorder="no"
             allow="autoplay"
             src={track}
           />

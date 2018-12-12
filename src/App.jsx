@@ -7,6 +7,7 @@ import Home from "./components/home";
 import Tracks from "./components/tracks";
 import Mixes from "./components/mixes";
 import MusicBox from "./components/musicBox";
+import Gratitudinator from "./components/gratitudinator";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Route path="/mixes" component={Mixes} />
         <Route path="/musicbox" component={MusicBox} />
         <Route path="/tracks" component={Tracks} />
+        <Route path="/gratitudinator" component={Gratitudinator} />
       </div>
     );
   }
