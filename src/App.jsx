@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
 
 import Navbar from "./components/navbar";
@@ -8,6 +7,7 @@ import Tracks from "./components/tracks";
 import Mixes from "./components/mixes";
 import MusicBox from "./components/musicBox";
 import Gratitudinator from "./components/gratitudinator";
+import "./App.css";
 
 class App extends Component {
   render() {

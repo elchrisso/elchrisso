@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import AddGratitudeForm from "./addGratitudeForm";
 import { AllItems } from "./allItems";
 
 class Gratitudinator extends Component {
@@ -42,10 +43,10 @@ class Gratitudinator extends Component {
             <AllItems />
           </tbody>
         </table>
-        <button className="btn btn-primary" onClick={this.handleAddItem}>
+        {/* <button className="btn btn-primary" onClick={this.handleAddItem}>
           Add Item
-        </button>
-        <h1>real data</h1>
+        </button> */}
+        <AddGratitudeForm />
       </React.Fragment>
     );
   }
