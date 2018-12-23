@@ -19,16 +19,6 @@ class Gratitudinator extends Component {
     ]
   };
 
-  handleAddItem = () => {
-    const items = [...this.state.data];
-    items.push({
-      date: new Date(),
-      description: "this is a new item for which i am grateful."
-    });
-    console.log("handleAddItem");
-    this.setState({ data: items });
-  };
-
   render() {
     return (
       <React.Fragment>
@@ -43,9 +33,6 @@ class Gratitudinator extends Component {
             <AllItems />
           </tbody>
         </table>
-        {/* <button className="btn btn-primary" onClick={this.handleAddItem}>
-          Add Item
-        </button> */}
         <AddGratitudeForm />
       </React.Fragment>
     );
