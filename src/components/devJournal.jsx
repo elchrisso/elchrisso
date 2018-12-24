@@ -5,7 +5,7 @@ import AddJournalEntryForm from "./addJournalEntryForm";
 class DevJournal extends Component {
   render() {
     return (
-      <div>
+      <div class="container-fluid">
         <h1>this is the devJournal</h1>
         <JournalEntries />
         <AddJournalEntryForm />

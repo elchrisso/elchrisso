@@ -21,7 +21,7 @@ class Gratitudinator extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment class="container-fluid">
         <table className="table">
           <thead>
             <tr>

@@ -9,7 +9,7 @@ class Mixes extends Component {
   };
   render() {
     return (
-      <div>
+      <div class="container-fluid">
         {this.state.mixes.map(mix => (
           <iframe
             title={mix}

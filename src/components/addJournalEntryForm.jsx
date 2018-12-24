@@ -39,13 +39,14 @@ class AddJournalEntryForm extends Component {
               }}
             >
               <div className="form-group">
-                <label htmlFor="entryText">Entry</label>
                 <textArea
+                  class="form-control"
                   value={this.state.journalEntry.text}
                   id="entryText"
                   type="text"
                   onChange={this.handleEntryTextChange}
                   rows="6"
+                  placeholder="Dev journal entry for today..."
                 />
               </div>
               <button className="btn btn-primary">Add Entry</button>
