@@ -14,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <title>elchrissso</title>
         <Navbar />
         <Route path="/" exact component={Home} />
         <Route path="/mixes" component={Mixes} />

@@ -24,3 +24,9 @@
 .App-link {
   color: #61dafb;
 }
+
+aside {
+  background-color: darkgray;
+  text-align: center;
+  padding-top: 40px;
+}
