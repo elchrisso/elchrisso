@@ -31,7 +31,7 @@ class CbNavbar extends Component {
     return (
       <div>
         <Navbar className="fixed-top" color="dark" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">elChrisso</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -40,42 +40,31 @@ class CbNavbar extends Component {
                   MusicBox <span className="sr-only">(current)</span>
                 </NavLink>
               </NavItem>
-              <li className="nav-item active">
-                <a className="nav-link" href="/tracks">
+              <NavItem className="active">
+                <NavLink href="/tracks">
                   Tracks <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="/mixes">
+                </NavLink>
+              </NavItem>
+              <NavItem className="active">
+                <NavLink href="/mixes">
                   Mixes <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="/gratitudinator">
+                </NavLink>
+              </NavItem>
+              <NavItem className="active">
+                <NavLink href="/gratitudinator">
                   Gratitudinator <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="/devjournal">
+                </NavLink>
+              </NavItem>
+              <NavItem className="active">
+                <NavLink href="/devjournal">
                   cb's Dev Journal <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <l1 className="nav-item active">
-                <a className="nav-link" href="/practicetools">
+                </NavLink>
+              </NavItem>
+              <NavItem className="active">
+                <NavLink href="/practicetools">
                   Practice Tools <span className="sr-only">(current)</span>
-                </a>
-              </l1>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
