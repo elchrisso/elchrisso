@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Jumbotron } from "reactstrap";
 
 class Home extends Component {
   state = {};
   render() {
     return (
-      <div class="container-fluid">
+      <Jumbotron class="container-fluid">
         <h1>Welcome!</h1>
         <p>
           I am Chris. This is my site. I built it using react.js for frontend,
@@ -12,7 +13,7 @@ class Home extends Component {
           theres even a little magenta.js instantiated and waiting to get put to
           better use...
         </p>
-      </div>
+      </Jumbotron>
     );
   }
 }
