@@ -9,6 +9,7 @@ import MusicBox from "./components/musicBox";
 import Gratitudinator from "./components/gratitudinator";
 import DevJournal from "./components/devJournal";
 import PracticeTools from "./components/practiceTools";
+import DeliberateClimber from "./components/deliberateClimber";
 import "./App.css";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         <Route path="/devjournal" component={DevJournal} />
         <Route path="/gratitudinator" component={Gratitudinator} />
         <Route path="/practicetools" component={PracticeTools} />
+        <Route path="/deliberateclimber" component={DeliberateClimber} />
       </div>
     );
   }

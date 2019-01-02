@@ -9,9 +9,9 @@ class Home extends Component {
         <h1>Welcome!</h1>
         <p>
           I am Chris. This is my site. I built it using react.js for frontend,
-          apollo to talk to a hasura-generated heroku backend for the data,
-          theres even a little magenta.js instantiated and waiting to get put to
-          better use...
+          reactstrap for markup, apollo to talk to a hasura-generated heroku
+          backend for the data, there's even a little magenta.js instantiated
+          and waiting to get put to better use...
         </p>
       </Jumbotron>
     );

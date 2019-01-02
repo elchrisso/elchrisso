@@ -65,6 +65,11 @@ class CbNavbar extends Component {
                   Practice Tools <span className="sr-only">(current)</span>
                 </NavLink>
               </NavItem>
+              <NavItem className="active">
+                <NavLink href="/deliberateclimber">
+                  Deliberate Climber <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
