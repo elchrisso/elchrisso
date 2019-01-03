@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
+import "./cbNavbar.css";
 
 class CbNavbar extends Component {
   constructor(props) {
@@ -35,40 +36,30 @@ class CbNavbar extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem className="active">
-                <NavLink href="/musicbox">
-                  MusicBox <span className="sr-only">(current)</span>
+              <NavItem>
+                <NavLink href="/musicbox" action>
+                  MusicBox
                 </NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/tracks">
-                  Tracks <span className="sr-only">(current)</span>
+              <NavItem>
+                <NavLink href="/tracks" action>
+                  Tracks
                 </NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/mixes">
-                  Mixes <span className="sr-only">(current)</span>
-                </NavLink>
+              <NavItem>
+                <NavLink href="/mixes">Mixes</NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/gratitudinator">
-                  Gratitudinator <span className="sr-only">(current)</span>
-                </NavLink>
+              <NavItem>
+                <NavLink href="/gratitudinator">Gratitudinator</NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/devjournal">
-                  cb's Dev Journal <span className="sr-only">(current)</span>
-                </NavLink>
+              <NavItem>
+                <NavLink href="/devjournal">cb's Dev Journal</NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/practicetools">
-                  Practice Tools <span className="sr-only">(current)</span>
-                </NavLink>
+              <NavItem>
+                <NavLink href="/practicetools">Practice Tools</NavLink>
               </NavItem>
-              <NavItem className="active">
-                <NavLink href="/deliberateclimber">
-                  Deliberate Climber <span className="sr-only">(current)</span>
-                </NavLink>
+              <NavItem>
+                <NavLink href="/deliberateclimber">Deliberate Climber</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

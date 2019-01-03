@@ -9,7 +9,8 @@ import MusicBox from "./components/musicBox";
 import Gratitudinator from "./components/gratitudinator";
 import DevJournal from "./components/devJournal";
 import PracticeTools from "./components/practiceTools";
-import DeliberateClimber from "./components/deliberateClimber";
+import DeliberateClimber from "./components/deliberateClimber/deliberateClimber";
+import DcAddWorkout from "./components/deliberateClimber/addWorkout";
 import "./App.css";
 
 class App extends Component {
@@ -18,14 +19,15 @@ class App extends Component {
       <div className="App">
         <title>elchrissso</title>
         <CbNavbar />
-        <Route path="/" exact component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/mixes" component={Mixes} />
         <Route path="/musicbox" component={MusicBox} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/devjournal" component={DevJournal} />
         <Route path="/gratitudinator" component={Gratitudinator} />
         <Route path="/practicetools" component={PracticeTools} />
-        <Route path="/deliberateclimber" component={DeliberateClimber} />
+        <Route exact path="/deliberateclimber" component={DeliberateClimber} />
+        <Route path="/deliberateclimber/addworkout" component={DcAddWorkout} />
       </div>
     );
   }

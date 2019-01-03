@@ -28,6 +28,11 @@ class DeliberateClimber extends Component {
               </ButtonGroup>
               <ButtonGroup>
                 <Button type="button" className="btn btn-primary">
+                  Add Workout
+                </Button>
+              </ButtonGroup>
+              <ButtonGroup>
+                <Button type="button" className="btn btn-primary">
                   Add Expenditure
                 </Button>
               </ButtonGroup>
