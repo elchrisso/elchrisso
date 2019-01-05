@@ -12,7 +12,7 @@ class Tracks extends Component {
   };
   render() {
     return (
-      <div class="container-fluid">
+      <div className="container-fluid">
         {this.state.tracks.map(track => (
           <iframe
             title={track}

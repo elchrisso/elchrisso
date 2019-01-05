@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
-const allEntries = gql`
+const ALL_ENTRIES = gql`
   {
     dev_journal_entry {
       entry
@@ -12,7 +12,7 @@ const allEntries = gql`
 `;
 
 export const JournalEntries = () => (
-  <Query query={allEntries}>
+  <Query query={ALL_ENTRIES}>
     {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error</p>;

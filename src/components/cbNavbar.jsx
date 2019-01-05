@@ -6,11 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from "reactstrap";
 import "./cbNavbar.css";
 
@@ -37,14 +33,10 @@ class CbNavbar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/musicbox" action>
-                  MusicBox
-                </NavLink>
+                <NavLink href="/musicbox">MusicBox</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/tracks" action>
-                  Tracks
-                </NavLink>
+                <NavLink href="/tracks">Tracks</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/mixes">Mixes</NavLink>

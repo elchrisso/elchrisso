@@ -21,7 +21,7 @@ class Gratitudinator extends Component {
 
   render() {
     return (
-      <React.Fragment class="container-fluid">
+      <div className="container-fluid">
         <table className="table">
           <thead>
             <tr>
@@ -34,7 +34,7 @@ class Gratitudinator extends Component {
           </tbody>
         </table>
         <AddGratitudeForm />
-      </React.Fragment>
+      </div>
     );
   }
 }

@@ -5,7 +5,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <Jumbotron class="container-fluid">
+      <Jumbotron className="container-fluid">
         <h1>Welcome!</h1>
         <p>
           I am Chris. This is my site. I built it using react.js for frontend,

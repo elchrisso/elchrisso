@@ -8,15 +8,21 @@ import {
   ButtonToolbar
 } from "reactstrap";
 
+import { RecentPerformanceList } from "./recentPerformanceList";
+
 class DeliberateClimber extends Component {
   state = {};
   render() {
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+    console.log(new Intl.DateTimeFormat(["ban", "id"]).format(oneWeekAgo));
+
     return (
       <div>
         <Row>
           <Col className="col-sm-8">
             <Jumbotron>
-              <h1>last7Days</h1>
+              <RecentPerformanceList one_week_ago={oneWeekAgo} />
             </Jumbotron>
           </Col>
           <Col className="col-sm-4">
